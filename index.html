@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameHub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/ton-logo.png">
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo">GameHub</a>
+
+    <nav class="navbar">
+      <ul class="nav-list">
+        <li><a href="index.html" class="nav-link">Accueil</a></li>
+        <li><a href="pages/forums.html" class="nav-link">Forums</a></li>
+        <li><a href="pages/actualitees.html" class="nav-link">Actualitées</a></li>
+		<li><a href="pages/Connexion.html" class="nav-link">Connexion</a></li>
+	  </ul>
+    </nav>
+
+	<div class="theme-wrapper">
+		<span class="theme-label" id="theme-text">LIGHT</span>
+		<label class="theme-switch">
+			<input type="checkbox" id="toggle">
+			<span class="slider"></span>
+		</label>
+	</div> 
+</header>
+
+  <main>
+    <!-- SECTION HERO (BLOC OPAQUE À GAUCHE + CARROUSEL LOCALISÉ À DROITE) -->
+    <section class="hero-container">
+      
+      <!-- Bloc CTA Opaque à gauche -->
+      <div class="hero-left">
+        <a href="#contenu" class="cta-btn">Rejoindre</a>
+        <p class="hero-text">
+          Rejoins la communauté des passionnés de jeux vidéo <br> <br> Discute de tes jeux préférés, partage tes astuces et trouve tes futurs coéquipiers
+        </p>
+      </div>
+
+      <!-- Carrousel strictement confiné à droite -->
+      <div class="hero-slider">
+        <div class="slide active" style="background-image: url('images/image1.jpg');"></div>
+        <div class="slide" style="background-image: url('images/image2.jpg');"></div>
+        <div class="slide" style="background-image: url('images/image3.jpg');"></div>
+      </div>
+
+    </section>
+
+    <!-- SECTION CONTENU PRINCIPAL -->
+    <section id="contenu" class="content-grid">
+      <div class="content-left">
+		<article class="box">
+		  <h2>Top Jeux</h2>
+		  <p class="top-jeux-desc">
+		  Découvre les pépites du moment les mieux notées !
+		  </p>
+
+		  <ol class="top-games-list" id="top-games-list">
+			<!-- Chargé via JS (ici ton Top 5 avec page_size=5) -->
+		  </ol>
+
+		  <!-- Le bouton pour aller voir la page Actualités -->
+		  <a href="#" class="btn-voir-plus">Voir le classement complet</a>
+		</article>	
+		<article class="box">
+			<h2>Forums populaires</h2>
+			<ul class="forum-links">
+			  <li>
+				<a href="https://www.reddit.com/r/gaming/" target="_blank" rel="noopener noreferrer">
+				  r/gaming — Actu & Discussions
+				</a>
+			  </li>
+			  <li>
+				<a href="https://www.reddit.com/r/pcgaming/" target="_blank" rel="noopener noreferrer">
+				  r/pcgaming — Communauté PC
+				</a>
+			  </li>
+			  <li>
+				<a href="https://www.reddit.com/r/IndieDev/" target="_blank" rel="noopener noreferrer">
+				  r/IndieDev — Jeux Indépendants
+				</a>
+			  </li>
+			</ul>
+		</article>
+	
+	  </div>
+      <aside class="sidebar-right">
+        <div class="side-card">
+          <h3>Le Roi du Bac à Sable</h3>
+		  <p>Des millions de blocs posés, des diamants minés et des Creepers esquivés. Le jeu indémodable où la seule limite reste ton imagination (et la Redstone).</p>
+          <img src="images/image1.jpg" alt="Illustration 1">
+        </div>
+        <div class="side-card">
+          <h3>Génie du Bricolage</h3>
+		  <p>Construis des véhicules absurdes, des usines automatisées et des engins volants qui finissent une fois sur deux dans le décor. La physique n'a jamais été aussi drôle.</p>
+          <img src="images/image2.jpg" alt="Illustration 2">
+        </div>
+        <div class="side-card">
+          <h3>Selon Mes Calculs...</h3>
+		  <p>ce n'est pas un bug de conception, c'est une "fonctionnalité cachée" validée par la science.</p>
+          <img src="images/image3.jpg" alt="Illustration 3">
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-col">
+      <h4>Sommaire</h4>
+      <ul>
+        <li><a href="#contenu">Articles</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contacter</h4>
+      <p>email@exemple.com</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
